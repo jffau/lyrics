@@ -1,9 +1,10 @@
 import React from 'react';
+import Tracks from '../tracks/Tracks.js';
 
 export default function Index() {
   return (
-    <div>
-      <h1> From Index </h1>
-    </div>
+    <>
+      <Tracks />
+    </>
   );
 }
