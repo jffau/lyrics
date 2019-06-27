@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 export default function Track(props) {
   const { track } = props;
   return (
@@ -18,6 +18,12 @@ export default function Track(props) {
             </strong>
             :{track.album_name}
           </p>
+          <Link
+            to={`lyrics/track/${track.track_id}}`}
+            className="btn btn-dark btn-block"
+          >
+            <i className="fas fa-chevron-right" /> View Lyrics
+          </Link>
         </div>
       </div>
     </div>
